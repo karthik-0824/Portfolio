@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/c4254e24a8.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<div id="header">
+    <div class="container">
+        <nav>
+            <img src="" class="logo">
+            <ul id="sidemenu">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <i class="fas fa-times" onclick="closemenu()"></i>
+            </ul>
+            <i class="fas fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+            <p>Full Stack Developer</p>
+            <h1>Hi, I'm <span>Karthik</span><br></h1>
+            <h2>Building seamless digital experiences — front to back</h2>
+        </div>
+    </div>
+</div>
+<!-- -----------about---------- -->
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="images/profile.jpeg">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <p>I'm an aspiring Web Developer with a growing passion for creating responsive, user-friendly websites and web applications. I enjoy working with HTML, CSS, JavaScript, and modern frameworks like React,Node Js to bring clean, functional designs to life.<br>
+                Currently focused on building my skills through real-world projects and continuous learning, I aim to write code that's not only effective but also easy to maintain and scale. I'm excited about the ever-evolving world of web development and love the challenge of solving problems through code.<br>
+                I look forward to collaborating with teams, learning from experienced developers, and contributing to impactful web experiences.</p>
+
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                    <p class="tab-links" onclick="opentab('education')">Education</p>
+                </div>
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>Front-End</span><br>HTML</li>
+                        <li>CSS </li>
+                        <li>JavaScript(ES11) </li>
+                        <li>React Js</li>
+                        <li><span>BackEnd</span><br>Node.js</li>
+                        <li>Express.js</li>
+                        <li>Restful Api's</li>
+                        <li>Working with Databases(MongoBD,Postgres)</li>
+                       
+                    </ul>
+                </div>
+                <div class="tab-contents" id="experience">
+                    <ul>
+                        <li><span>2023 - Current</span><br>Working On Open Source Projects</li>
+                        <li><span>May 2024 - Sept 2024</span><br>Cisco Systems</li>
+                        <li><span>Aug 2021 - July 2023</span><br>Infosys Limited</li>
+                        <li><span>May 2022 - Sept 2022</span><br>Tata Consultancy Services</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>2025</span><br>Zero To Mastery (Learning Platform)</li>
+                        <li><span>2025</span><br>Southern University at New Orleans</li>
+                        <li><span>2017</span><br>CMR Institute of Technology</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- ---------services---------------- -->
+<div id="services">
+    <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+            <div>
+                <i class="fas fa-code"></i>
+                <h2>Full Stack Web Application Development</h2>
+                <p>I specialize in building complete web applications from the ground up — handling both the frontend (what users see) and backend (server, database, and logic). I create seamless user experiences backed by powerful logic and scalable infrastructure. Whether you're starting from scratch or need to revamp an existing system, I can take your idea and bring it to life.<br>
+               
+                What’s included:<br>
+                            UI/UX design implementation<br>
+                            Server-side logic<br>
+                            Database integration<br>
+                            API creation & integration<br>
+                            Deployment and performance tuning</p>
+            </div>
+            <div>
+                <i class="fas fa-code"></i>
+                <h2>Front End Development</h2>
+                <p>Front-end development focuses on building the visual and interactive parts of a website or web application—the user interface (UI) with which users see and interact. It involves using technologies like HTML (for structure), CSS (for styling), and JavaScript (for interactivity).</p>
+            </div>
+            <div>
+                <i class="fas fa-crop-alt"></i>
+                <h2>Back End Development</h2>
+                <p>Back-end development handles the server-side logic, databases, and APIs that power the functionality behind a website or app. It ensures data flows smoothly between the front and server ends using Node.js and Express.js.</p>
+            </div>
+            <div>
+                <i class="fab fa-app-store"></i>
+                <h2>Databases</h2>
+                <p>Databases store, manage, and retrieve data for applications. Back-end developers work with databases like MongoDB, MySQL, or PostgreSQL to ensure data is secure, accessible, and well-structured for the application to use.</p>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- ----------portfolio------------ -->
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="images/Project-1.jpg">
+                <div class="layer">
+                    <h3>Green Cart</h3>
+                    <p>Greencart is a convenient and user-friendly grocery shopping app designed to make your shopping 
+                        experience seamless and efficient. Built on the robust MERN stack (MongoDB, Express.js, React, and Node.js), 
+                        Greencart connects you with a wide range of fresh and high-quality grocery products, 
+                        all delivered right to your doorstep</p>
+                    <a href="https://grocery-app-ttyc.vercel.app/"><i class="fas fa-external-link-alt color: #007bff;"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/Robots.jpg">
+                <div class="layer">
+                    <h3>Robo Friends</h3>
+                    <p>RoboFriends is a dynamic web app built with React.js that displays a searchable list of robot profiles. Users can filter robots in real time using a search bar, showcasing the power of React's component-based architecture and state management for building fast, interactive UIs.
+
+</p>
+                    <a href="https://karthik-0824.github.io/robofriends-latest/"><i class="fas fa-external-link-alt"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/work-3.jpg">
+                <div class="layer">
+                    <h3>Full Stack Chat App</h3>
+                    <p>Chat App is a real-time full-stack chat application built using the MERN stack (MongoDB, Express.js, React, Node.js) and Socket.IO for instant messaging. It features secure user authentication, responsive UI, private and group chat capabilities, and real-time message updates. Designed for speed and scalability, Chat App offers a seamless communication experience across devices.</p>
+                    <a href="https://full-stack-quick-chat-client.vercel.app/"><i class="fas fa-external-link-alt"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- ----------contact------------- -->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p>I'd love to hear from you! If you have any questions, comments, or feedback, please let me know!!</p>
+                <p><i class="fas fa-paper-plane"></i> karthikjaddu24@gmail.com</p>
+                <p><i class="fas fa-phone-square-alt"></i>504-617-8485</p>
+                <div class="social-icons">
+                    <a href="https://facebook.com/"><i class="fab fa-facebook"></i></a>
+                    <a href=""><i class="fab fa-twitter-square"></i></a>
+                    <a href=""><i class="fab fa-instagram"></i></a>
+                    <a href=""><i class="fab fa-linkedin"></i></a>
+                </div>
+                <a href="images/Karthik_Full_Stack_Dev.pdf" download class="btn btn2">Download CV</a>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<script>
+
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+
+</script>
+
+<script>
+
+    var sidemeu = document.getElementById("sidemenu");
+
+    function openmenu(){
+        sidemeu.style.right = "0";
+    }
+    function closemenu(){
+        sidemeu.style.right = "-200px";
+    }
+
+</script>
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbyZL3kKNtzqTGCmbrXSIM4zoQ_9FV3NxQKqMlWG2UOs_08obFSgzIb6a9HzrLfkbLXi/exec' // add your own app script link here
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML = "Message sent successfully"
+            setTimeout(function(){
+                msg.innerHTML = ""
+            },5000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+</body>
+</html>
